@@ -1,12 +1,148 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Гостиницы и отдых в Седоне</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visaully-hidden">Открыть меню</span>
+        <img src="img/icon-menu.svg" alt="Ссылка на модальное окно с меню" width="23" height="22">
+      </button>
+      <div class="turn-off">
+        <ul class="page-header__list">
+          <li class="page-header__item"><a href="#">Главная</a></li>
+          <li class="page-header__item"><a href="catalog.html">Фото и видео</a></li>
+          <li class="page-header__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="page-header__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+        </ul>
+        <a class="icon-cross" href="#"></a>
+      </div>
+    </nav>
+    <div class="page-header__cover page-header__cover--index">
+      <img src="img/text-index.svg" alt="Слоган Седона" width="282" height="214">
+    </div>
+  </header>
 
-  </body>
+  <main class="page-main">
+    <h1 class="visually-hidden">Седона - не большой городок в Аризоне, лучше чем Гранд Каньён</h1>
+
+    <section class="promo">
+      <h2 class="visually-hidden">Промо информация и достопримечательности</h2>
+
+      <div class="promo__discription">
+        <p class="promo__title">Седона небольшой городок в Аризоне, заслуживающий большего!
+        </p>
+        <p class="promo__text">Рассмотрим 5 причин, по которым Cедона круче, чем гранд каньон!
+      </div>
+    </section>
+
+    <section class="reasons">
+      <h2 class="visually-hidden">Причины, почему нужно выбрать Седону</h2>
+      <div class="reasons__row">
+        <div class="reason">
+          <h3 class="reason__title">
+            Настоящий городок
+          </h3>
+          <span class="reason__number">— №1 —</span>
+          <p class="reason__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
+        <img class="reasons__image" src="img/photo-city@1x1.jpg" width="520" height="260" alt="real city">
+      </div>
+
+      <ul class="features">
+        <li class="feature feature--house">
+          <h3 class="feature__title">Жильё</h3>
+          <p class="feature__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        </li>
+        <li class="feature feature--presents">
+          <h3 class="feature__title">Сувениры</h3>
+          <p class="feature__description">Не только китайского, но и местного производства!
+          </p>
+        </li>
+        <li class="feature feature--food">
+          <h3 class="feature__title">Еда</h3>
+          <p class="feature__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+          </p>
+        </li>
+      </ul>
+      <div class="reasons__row">
+        <img class="reasons__image" src="img/photo-bridge@1x1.jpg" width="520" height="260" alt="bridge">
+
+        <div class="reason">
+          <h3 class="reason__title">
+            Там есть Мост дьявола
+          </h3>
+          <span class="reason__number">&mdash;&nbsp;&#8470;&nbsp;2 &mdash;</span>
+          <p class="reason__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </div>
+      </div>
+      <div class="reasons__row reasons__row--last">
+        <div class="reason">
+          <h3 class="reason__title">Небольшая площадь
+          </h3>
+          <span class="reason__number">— № 3 —</span>
+          <p class="reason__description">Все интересные места находятся очень близко</p>
+        </div>
+        <div class="reason">
+          <h3 class="reason__title">Красивая дорога
+          </h3>
+          <span class="reason__number">— № 4 —</span>
+          <p class="reason__description">Ехать в седону из Лас-Вегаса совсем не скучно!
+          </p>
+        </div>
+        <div class="reason">
+          <h3 class="reason__title">Мало туристов
+          </h3>
+          <span class="reason__number">— № 5 —</span>
+          <p class="reason__description">Большинство едет в гранд каньон и толпится там</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking">
+      <h2 class="visually-hidden">Форма поиска гостиницы и бронирование</h2>
+      <p class="booking__title">Заинтересовались?</p>
+      <p class="booking__reasons">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+        Седоне</p>
+      <button class="booking__button button" type="button">Поиск гостиницы в Седоне</button>
+      </section>
+      <div class="map">Седона на карте</div>
+  </main>
+
+  <footer class="page-footer">
+    <a class="page-footer__tag">#visitsedona</a>
+
+    <ul class="social">
+      <li class="social__item">
+        <a class="social__link" href="#" aria-label="Twitter"></a>
+          <img class="social__label" src="img/icon-twitter.svg" alt="Twitter-icon">
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#" aria-label="Facebook"></a>
+          <img class="social__label" src="img/icon-facebook.svg" alt="Facebook-icon">
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#" aria-label="Youtube"></a>
+          <img class="social__label" src="img/icon-youtube.svg" alt="Youtube-icon">
+      </li>
+    </ul>
+    <div class="developer">
+      <p class="developer__text">Разработано</p>
+      <a class="developer__link" href="https://htmlacademy.ru/intensive/htmlcss"
+        aria-label="Перейти на сайт htmlacademy"></a>
+      <img class="developer__logo" src="img/htmlacademy-footer-logo.svg" alt="html academy logo">
+    </div>
+
+  </footer>
+
+</body>
+
 </html>
