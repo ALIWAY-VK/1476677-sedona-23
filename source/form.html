@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page">
+<body class="page__body">
 
   <header class="page-header">
     <a class="page-header__logo">
@@ -28,14 +28,14 @@
         <a class="icon-cross" href="#"></a>
       </div>
     </nav>
-    <div class="page-header__cover page-header__cover--catalog">
+    <div class="page-header__cover page-header__cover--index">
       <img class="page-header__tagline" src="img/sedona-slogan.svg" alt="Слоган Седона" width="282" height="214">
     </div>
   </header>
 
-  <main class="page__form">
+  <main class="page-form">
     <h1 class="visually-hidden">Форма для отзывов посетителей Седоны</h1>
-    <h2 class="page__title">Оставьте свой отзыв</h2>
+    <h2 class="page-form__title">Оставьте свой отзыв</h2>
     <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
     <form class="form" action="https://echo.htmlacademy.ru" name="reviews" id="reviews_id">
@@ -120,12 +120,12 @@
         </div>
       </fieldset>
 
-      <fieldset class="description__fieldset description__fieldset--description">
+      <fieldset class="description">
         <h2 class="description__title">Опишите свои эмоции:</h2>
         <label class="description__label">
           <textarea class="description__textarea" form="reviews_id" name="description_text"
             placeholder="Опишите подробно все свои восторги">
-					</textarea>
+          </textarea>
         </label>
       </fieldset>
 
