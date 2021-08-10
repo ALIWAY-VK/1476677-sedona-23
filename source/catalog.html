@@ -14,9 +14,8 @@
       <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седона">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--active" type="button">
-        <span class="visaully-hidden">Открыть меню</span>
-        <img src="img/icon-menu.svg" alt="Ссылка на модальное окно с меню" width="23" height="22">
+      <button class="main-nav__toggle" type="button">
+        <span class="visaully-hidden">Переключатель меню</span>
       </button>
       <div class="turn-off">
         <ul class="page-header__list">
@@ -25,7 +24,6 @@
           <li class="page-header__item"><a href="form.html">Форма отзыва</a></li>
           <li class="page-header__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
         </ul>
-        <a class="icon-cross" href="#"></a>
       </div>
     </nav>
     <div class="page-header__cover page-header__cover--catalog">
@@ -33,54 +31,56 @@
     </div>
   </header>
 
-  <main class="page-catalog">
+  <main class="page-main">
     <h1 class="visually-hidden">Приезжайте в Седону, смотрите отзывы путешественников</h1>
 
-    <section class="promo-catalog">
+    <section class="promo">
       <h2 class="visually-hidden">Промо информация и фотографии достопримечательностей</h2>
 
-      <div class="promo-catalog__discription">
-        <p class="promo-catalog__title">Фото и видео</p>
-        <p class="promo-catalog__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
-        </div>
+      <div class="promo__discription">
+        <p class="promo__title">Фото и видео</p>
+        <p class="promo__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+          политике и экономике.</p>
+      </div>
     </section>
 
     <section class="photo-gallery">
       <h2 class="visually-hidden">Галерея фотографий путешественников</h2>
-     <ul class="photo-gallery__list">
-       <li class="photo-gallery__item">
+      <ul class="photo-gallery__list">
+        <li class="photo-gallery__item">
           <img class="photo-gallery__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="photo-1-mobile">
           <div class="photo-gallery__discription">
             <p class="photo-gallery__title">Неродные просторы</p>
             <p class="photo-gallery__author">Автор фото: Борис</p>
             <p class="photo-gallery__like">1350</p>
           </div>
-       </li>
-       <li class="photo-gallery__item">
+        </li>
+        <li class="photo-gallery__item">
           <img class="photo-gallery__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="photo-2-mobile">
           <div class="photo-gallery__discription">
             <p class="photo-gallery__title">Местная растительность</p>
             <p class="photo-gallery__author">Автор фото: Сергей</p>
             <p class="photo-gallery__like">143</p>
           </div>
-       </li>
-       <li class="photo-gallery__item">
+        </li>
+        <li class="photo-gallery__item">
           <img class="photo-gallery__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="photo-3-mobile">
           <div class="photo-gallery__discription">
             <p class="photo-gallery__title">Дорога на Север</p>
             <p class="photo-gallery__author">Автор фото: Петр</p>
             <p class="photo-gallery__like">96</p>
           </div>
-       </li>
-       <li class="photo-gallery__item">
-          <img class="photo-gallery__image" src="img/photo-4-desktop-1.jpg" width="280" height="280" alt="photo-4-mobile">
+        </li>
+        <li class="photo-gallery__item">
+          <img class="photo-gallery__image" src="img/photo-4-desktop-1.jpg" width="280" height="280"
+            alt="photo-4-mobile">
           <div class="photo-gallery__discription">
             <p class="photo-gallery__title">Мост Дьявола</p>
             <p class="photo-gallery__author">Автор фото: Антон</p>
             <p class="photo-gallery__like">254</p>
           </div>
-       </li>
-     </ul>
+        </li>
+      </ul>
     </section>
 
     <section class="video">
@@ -90,13 +90,14 @@
       <div class="video__wrapper">
         <img class="video__image" src="img/video-mobile.jpg" alt="video">
 
-        <form class="video__controls video__controls--top">
-          <label>
-            <input class="video__scale" type="range" min="0" max="100" value="0" step="1">
-            <span class="visually-hidden">Шкала прокрутки видео по кадрам</span>
-          </label>
-        </form>
-        <form class="video__control video__control--bottom">
+        <div class="video__controls">
+          <div class="video__control-bar control-bar">
+              <div class="control-bar__scale">
+                  <div class="control-bar__bar" style="width: 80%; margin-left: 0"></div>
+              </div>
+              <div class="control-bar__toggle" tabindex="0" style="left: 0" aria-label="Ползунок поиска">
+              </div>
+        </div>
           <button class="video__replay" type="button">
             <span class="visually-hidden">Повтороне воспроизведение</span>
           </button>
@@ -106,7 +107,7 @@
           <button class="video__full-screen" type="button">
             <span class="visually-hidden">Полноэкранный режим видео</span>
           </button>
-        </form>
+        </div>
       </div>
     </section>
 

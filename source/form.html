@@ -14,9 +14,8 @@
       <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седона">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--active" type="button">
-        <span class="visaully-hidden">Открыть меню</span>
-        <img src="img/icon-menu.svg" alt="Ссылка на модальное окно с меню" width="23" height="22">
+      <button class="main-nav__toggle" type="button">
+        <span class="visaully-hidden">Переключатель меню</span>
       </button>
       <div class="turn-off">
         <ul class="page-header__list">
@@ -25,7 +24,6 @@
           <li class="page-header__item"><a href="form.html">Форма отзыва</a></li>
           <li class="page-header__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
         </ul>
-        <a class="icon-cross" href="#"></a>
       </div>
     </nav>
     <div class="page-header__cover page-header__cover--index">
@@ -33,10 +31,17 @@
     </div>
   </header>
 
-  <main class="page-form">
+  <main class="page-main">
     <h1 class="visually-hidden">Форма для отзывов посетителей Седоны</h1>
-    <h2 class="page-form__title">Оставьте свой отзыв</h2>
-    <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+
+    <section class="promo">
+      <h2 class="visually-hidden">Страница формы контактов</h2>
+
+      <div class="promo__discription">
+        <p class="promo__title">Оставьте свой отзыв</p>
+        <p class="promo__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+    </section>
 
     <form class="form" action="https://echo.htmlacademy.ru" name="reviews" id="reviews_id">
 
